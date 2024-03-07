@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/Pharmacy-front/static/js/main.bcd6ae0b.js",
+    "index.html": "/Pharmacy-front/index.html",
+    "main.bcd6ae0b.js.map": "/Pharmacy-front/static/js/main.bcd6ae0b.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.bcd6ae0b.js"
+  ]
+}
