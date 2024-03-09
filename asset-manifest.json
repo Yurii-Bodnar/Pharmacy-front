@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/Pharmacy-front/static/js/main.05afa8f6.js",
+    "main.js": "/Pharmacy-front/static/js/main.19d77245.js",
     "static/js/541.93ff6717.chunk.js": "/Pharmacy-front/static/js/541.93ff6717.chunk.js",
     "static/js/975.3aa16556.chunk.js": "/Pharmacy-front/static/js/975.3aa16556.chunk.js",
     "index.html": "/Pharmacy-front/index.html",
     "static/media/sprite.svg": "/Pharmacy-front/static/media/sprite.1d17b6108256fa151b210f450674d0fe.svg",
-    "main.05afa8f6.js.map": "/Pharmacy-front/static/js/main.05afa8f6.js.map",
+    "main.19d77245.js.map": "/Pharmacy-front/static/js/main.19d77245.js.map",
     "541.93ff6717.chunk.js.map": "/Pharmacy-front/static/js/541.93ff6717.chunk.js.map",
     "975.3aa16556.chunk.js.map": "/Pharmacy-front/static/js/975.3aa16556.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.05afa8f6.js"
+    "static/js/main.19d77245.js"
   ]
 }
