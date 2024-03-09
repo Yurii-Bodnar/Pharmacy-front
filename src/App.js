@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import {
   Navigate,
   Route,
@@ -9,11 +9,9 @@ import {
 import { ProductsContext, ShoppingCartContext } from "./utility/context";
 import Layout from "./components/Layout/index.jsx";
 import PharmacyList from "./components/PharmacyList/index.jsx";
-import ShopPage from "./pages/ShopPage.jsx";
-import ShoppingCartPage from "./pages/ShoppingCartPage.jsx";
 
-// const ShopPage = lazy(() => import("./pages/ShopPage.jsx"));
-// const ShoppingCartPage = lazy(() => import("./pages/ShoppingCartPage.jsx"));
+const ShopPage = lazy(() => import("./pages/ShopPage.jsx"));
+const ShoppingCartPage = lazy(() => import("./pages/ShoppingCartPage.jsx"));
 
 function App() {
   const [products, setProducts] = useState([]);
