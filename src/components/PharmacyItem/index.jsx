@@ -33,7 +33,7 @@ const PharmacyItem = ({
   const getDataForKeyWord = (pharmacyName) => {
     const correctStr = pharmacyName.replace("/", "");
     let data;
-    for (let i = 0; i < products.length; i++) {
+    for (let i = 0; i < products?.length; i++) {
       if (keysOfProduct[i].toLowerCase() === correctStr) {
         data = products[i];
         break;
