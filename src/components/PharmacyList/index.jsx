@@ -12,11 +12,14 @@ const PharmacyList = () => {
     const storage = JSON.parse(localStorage.getItem("products"));
 
     if (!storage) {
+      console.log("if");
+
       getProducts().then((data) => {
         setProducts(data);
         localStorage.setItem("products", JSON.stringify(data));
       });
     } else {
+      console.log("else");
       setProducts(storage);
     }
   }, [setProducts]);

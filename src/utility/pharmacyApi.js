@@ -1,5 +1,5 @@
 import axios from "axios";
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://paharmacy-beck-d4ecebd44ae2.herokuapp.com/";
 
 export const getProducts = async () => {
   try {

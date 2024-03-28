@@ -9,6 +9,7 @@ import {
 import { ProductsContext, ShoppingCartContext } from "./utility/context";
 import Layout from "./components/Layout/index.jsx";
 import PharmacyList from "./components/PharmacyList/index.jsx";
+import Preloader from "./components/Preloader/index.jsx";
 
 const ShopPage = lazy(() => import("./pages/ShopPage.jsx"));
 const ShoppingCartPage = lazy(() => import("./pages/ShoppingCartPage.jsx"));
@@ -39,7 +40,7 @@ function App() {
   }, [location.pathname, navigate]);
 
   return (
-    <Suspense fallback={<h1>Loading...</h1>}>
+    <Suspense fallback={<Preloader />}>
       <ProductsContext.Provider value={{ products, setProducts }}>
         <ShoppingCartContext.Provider
           value={{ shoppingCarts, setShoppingCart }}

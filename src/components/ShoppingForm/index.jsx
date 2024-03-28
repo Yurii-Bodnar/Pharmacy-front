@@ -19,7 +19,7 @@ const ShoppingForm = () => {
     address: "",
   });
 
-  const { shoppingCarts } = useContext(ShoppingCartContext);
+  const { shoppingCarts, setShoppingCart } = useContext(ShoppingCartContext);
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
@@ -35,6 +35,14 @@ const ShoppingForm = () => {
     createOrder({ ...formData, order: shoppingCarts }).then((data) => {
       alert(data.data.message);
     });
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      address: "",
+    });
+    setShoppingCart([]);
+    localStorage.setItem("shoppingCarts", "[]");
   };
 
   const handleChange = (e) => {
